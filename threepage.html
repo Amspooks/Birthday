@@ -4,7 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Letter</title>
-<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
   body {
     background-color: #CBC3E3;
@@ -13,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Inter, system-ui, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #2b2b2b;
     padding: 1rem;
     box-sizing: border-box;
@@ -24,9 +27,9 @@
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
     overflow: hidden;
     background-color: #333;
-    display: flex;
     z-index: 100;
   }
 
@@ -36,6 +39,8 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
   }
 
   .topnav a:hover {
@@ -57,8 +62,12 @@
     cursor: pointer;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     position: relative;
-    text-align: center;
+    text-align: left;
     margin-top: 60px; /* so it doesn't hide under topnav */
+    font-family: 'Libre Baskerville', serif; /* soft, handwritten feel */
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
   }
 
   .letter:hover {
@@ -67,30 +76,27 @@
   }
 
   .label {
-    font-size: 0.85rem;
-    color: #888;
+    font-size: 1.1rem;
+    color: #555;
     margin-bottom: 1rem;
+    font-weight: 600;
   }
 
   .closed-text {
     font-size: 0.95rem;
-    color: #555;
+    color: #888;
   }
 
   .content {
-    font-size: 0.95rem;
-    line-height: 1.6;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
     transition: opacity 0.6s ease, max-height 0.6s ease;
-    text-align: left;
   }
 
-  /* Make max-height very large so all text fits */
   .letter.open .content {
     opacity: 1;
-    max-height: 2000px; /* very large, adjust if needed */
+    max-height: 3000px; /* enough for long letters */
     margin-top: 1rem;
   }
 
@@ -106,7 +112,7 @@
   <a href="compliment.html">Compliments!</a>
   <a class="active" href="threepage.html">Silly</a>
   <a href="present.html">Presents</a>
-			<a href="tictactoe.html">Tic Tac Toe?</a>
+  <a href="tictactoe.html">Tic Tac Toe?</a>
 </div>
 
 <div class="letter" id="letter">
@@ -129,34 +135,31 @@
     <p>
       Please make sure to take care of yourself by the way. I worry about you so much because I care about you more than I care about anyone else. I know it's a little sad but I'm not lying. You're the highlight of my day and all I'd like is for you to be healthy. I sometimes can't sleep properly at night because I'm thinking about if you've slept yet.
     </p>
-	  <p>
-		  It's been amazing knowing you for this long. I wouldn't have it any other way. Spending time with you has definitely become the thing I look the most forward to. You're my safe space and I hope that never changes no matter how much time passes.
-	  </p>
-<p>
-	If I can be totally honest I see you like an older sister of mine. Is that weird? 
-	<p>
-		Probably...
-	</p>
-	  <p>
-		  But it's true. I look up to you, I care about you so much, and I love you the same way I'd love a family member. I've always wanted an older sibling my entire life, because my parents were never exactly there for me and I felt so lonely. When I met you, it felt like you filled that sense of emptiness I had for so long. You were there for me all the time, and you listened to every one of my problems. I learned how to laugh and smile again thanks to you, and I'd trust you with my life. 
-	  </p>
-	  <p>
-		  I know it's probably dumb to think of you as an older sister, but that really is how I view you most of the time. I want nothing for the best for you. You fill the world with wonder that wasn't there before. I can't wait to see what else you do with your life. Your actions and personality are something I admire, and it's no wonder you're a role model of mine. 
-	  </p>
-	  <p>
-		  I hope this letter helps you think a little more positively about yourself. I'm not saying all of this as a joke or a prank. I mean every single word. From the bottom of my heart. You're the best. You don't deserve to look down on yourself when you make the lives of those around you infinitely better. I understand that learning to be proud of yourself is hard, but I'll always be here reminding you that every single compliment that comes your way is 100% justified.
-	  </p>
-	  <p>
-		  Please please please take care of yourself. Thanks for putting up with me after all this time and being the big sis I never had. I hope I haven't weirded you out too much? If so just tell me and I can delete this. 
-	  </p>
-	  <p>
-		  Love ya lots
-	  </p>
-	  <p>
-		  Sincerely,
-		  Me? Siwon? I don't know you don't really call me by anything..
-	  </p>
-</p>
+    <p>
+      It's been amazing knowing you for this long. I wouldn't have it any other way. Spending time with you has definitely become the thing I look the most forward to. You're my safe space and I hope that never changes no matter how much time passes.
+    </p>
+    <p>
+      If I can be totally honest I see you like an older sister of mine. Is that weird? Probably...
+    </p>
+    <p>
+      But it's true. I look up to you, I care about you so much, and I love you the same way I'd love a family member. I've always wanted an older sibling my entire life, because my parents were never exactly there for me and I felt so lonely. When I met you, it felt like you filled that sense of emptiness I had for so long. You were there for me all the time, and you listened to every one of my problems. I learned how to laugh and smile again thanks to you, and I'd trust you with my life. 
+    </p>
+    <p>
+      I know it's probably dumb to think of you as an older sister, but that really is how I view you most of the time. I want nothing for the best for you. You fill the world with wonder that wasn't there before. I can't wait to see what else you do with your life. Your actions and personality are something I admire, and it's no wonder you're a role model of mine. 
+    </p>
+    <p>
+      I hope this letter helps you think a little more positively about yourself. I'm not saying all of this as a joke or a prank. I mean every single word. From the bottom of my heart. You're the best. You don't deserve to look down on yourself when you make the lives of those around you infinitely better. I understand that learning to be proud of yourself is hard, but I'll always be here reminding you that every single compliment that comes your way is 100% justified.
+    </p>
+    <p>
+      Please please please take care of yourself. Thanks for putting up with me after all this time and being the big sis I never had. I hope I haven't weirded you out too much? If so just tell me and I can delete this. 
+    </p>
+    <p>
+      Love ya lots
+    </p>
+    <p>
+      Sincerely,<br>
+      Me? Siwon? I don't know you don't really call me by anything..
+    </p>
   </div>
 </div>
 
