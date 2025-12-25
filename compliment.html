@@ -119,13 +119,57 @@ body {
 	background-color: #CBC3E3;
 }
 </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>for you</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f4f4f6;
+      font-family: Inter, system-ui, sans-serif;
+      color: #2b2b2b;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 520px;
+      padding: 2rem;
+    }
+
+    .compliment {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      min-height: 3em;
+    }
+
+    button {
+      background: none;
+      border: 1px solid #d0d0d0;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      color: #444;
+      transition: background 0.2s ease, opacity 0.2s ease;
+    }
+
+    button:hover {
+      background: rgba(0, 0, 0, 0.03);
+    }
+
+    button:active {
+      opacity: 0.7;
+    }
+  </style>
 </head>
 <body>
-	<div class="topnav">
-  <a href="home.html">Home</a>
-  <a class="active" href="compliment.html">Compliments!</a>
-  <a href="threepage.html">Silly</a>
-</div>
   <div class="container">
     <div id="compliment" class="compliment"></div>
     <button id="next">another</button>
@@ -164,17 +208,23 @@ body {
       "You’re more important than you think."
     ];
 
-    let index = 0;
     const complimentEl = document.getElementById("compliment");
     const button = document.getElementById("next");
 
-    function showCompliment() {
+    let lastIndex = -1;
+
+    function showRandomCompliment() {
+      let index;
+      do {
+        index = Math.floor(Math.random() * compliments.length);
+      } while (index === lastIndex && compliments.length > 1);
+
+      lastIndex = index;
       complimentEl.textContent = compliments[index];
-      index = (index + 1) % compliments.length;
     }
 
-    showCompliment();
-    button.addEventListener("click", showCompliment);
+    showRandomCompliment();
+    button.addEventListener("click", showRandomCompliment);
   </script>
 </body>
 </html>
