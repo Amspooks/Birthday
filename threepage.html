@@ -77,9 +77,6 @@ div{
 }
 body {
 	background-color: #CBC3E3;
-}
-	  <style>
-    body {
       margin: 0;
       min-height: 100vh;
       display: flex;
@@ -98,6 +95,7 @@ body {
       cursor: pointer;
       transition: box-shadow 0.3s ease, transform 0.3s ease;
       position: relative;
+      text-align: center;
     }
 
     .letter:hover {
@@ -109,7 +107,11 @@ body {
       font-size: 0.85rem;
       color: #888;
       margin-bottom: 1rem;
-      text-align: center;
+    }
+
+    .closed-text {
+      font-size: 0.95rem;
+      color: #555;
     }
 
     .content {
@@ -119,23 +121,18 @@ body {
       max-height: 0;
       overflow: hidden;
       transition: opacity 0.6s ease, max-height 0.6s ease;
+      text-align: left;
     }
 
     .letter.open .content {
       opacity: 1;
       max-height: 500px;
-    }
-
-    .closed-text {
-      text-align: center;
-      font-size: 0.95rem;
-      color: #555;
+      margin-top: 1rem;
     }
 
     .letter.open .closed-text {
       display: none;
     }
-  </style>
 </style>
 </head>
 <body>
@@ -144,12 +141,13 @@ body {
   <a href="home.html">Home</a>
   <a href="compliment.html">Compliments!</a>
   <a class="active" href="threepage.html">Silly</a>
+	<a href="present.html">Presents</a>
 </div>
 
 </head>
 <body>
   <div class="letter" id="letter">
-    <div class="label">for you</div>
+    <div class="label">Dear Marina,</div>
 
     <div class="closed-text">
       click to open
@@ -157,16 +155,20 @@ body {
 
     <div class="content">
       <p>
-        I don’t always know how to say things out loud.
+        You are such an incredible person who I am so happy to know. You light up my life and I don't know what I'd do without such an amazing presence in my life.
       </p>
       <p>
-        But I notice you. I notice the care you put into small choices,
-        the way you think before you speak, the way you hold things gently.
+        You've been there for me during my worst moments and that means more than you'll ever know. I truly do mean it when I say I probably wouldn't be here without you. 
       </p>
       <p>
-        You don’t have to do anything with this.
-        I just wanted it to exist.
+Your patience, kindness, and overall lovely personality always makes me feel seen. I want nothing but the best for you because that's what you deserve. As long as I can make you smile the same way you made me smile I'll be happy.
       </p>
+		<p>
+			Please make sure to take care of yourself by the way. I worry about you so much because I care about you more than I care about anyone else. I know it's a little sad but I'm not lying. You're the highlight of my day and all I'd like is for you to be healthy. I sometimes can't sleep properly at night because I'm thinking about if you've slept yet.
+		</p>
+		<p>
+			
+		</p>
     </div>
   </div>
 
