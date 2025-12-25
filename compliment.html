@@ -30,23 +30,24 @@ body {
       min-height: 3em;
     }
 
-    button {
-      background: none;
-      border: 1px solid #d0d0d0;
-      padding: 0.6rem 1.2rem;
-      font-size: 0.9rem;
-      cursor: pointer;
-      color: #444;
-      transition: background 0.2s ease, opacity 0.2s ease;
-    }
+button {
+  background: none;
+  border: 2px solid #000; /* black outline */
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #000;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
 
-    button:hover {
-      background: rgba(0, 0, 0, 0.03);
-    }
+button:hover {
+  background: rgba(0, 0, 0, 0.08); /* slightly darker hover */
+}
 
-    button:active {
-      opacity: 0.7;
-    }
+button:active {
+  opacity: 0.7;
+}
+
     	#flyButton {
   position: relative; /* Needed for animations */
   padding: 10px 20px;
